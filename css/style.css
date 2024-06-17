@@ -23,10 +23,10 @@ section
     --light-grey:rgba(255,255,255,0)
 }
 
-.header
+/* .header
 {
     font-family: var(--Lobster);
-}
+} */
 
 .header a
 {
@@ -82,13 +82,13 @@ header .nav-item
 
 header .navbar-brand
 {
-    color: #ddd;
+    /* color: #ddd; */
     padding-left: 8rem;
 }
-header .nav-link
+/* header .nav-link
 {
     color: #ddd;
-}
+} */
 header .nav-link:hover
 {
     color: black;
@@ -96,7 +96,7 @@ header .nav-link:hover
 
 header .row .col-md-5
 {
-    padding: 4.2vmin;
+    padding: 4.2vmin 1vmin;
 }
 
 header .row .col-md-7
@@ -281,7 +281,7 @@ purchase >p
     color: var(--light-black);
 }
 
-.carc-body .pricing
+.card-body .pricing
 {
     background: rgba(208, 241, 241, 199);
     border-top-right-radius: 170px;
@@ -355,7 +355,9 @@ purchase >p
     padding: 10vmin 4vmin;
     
 }
-
+.section-4 .carousel-inner  {
+    width: 24rem;
+}
 .section-4 .card
 {
     width: 22rem;
@@ -382,7 +384,81 @@ purchase >p
     border-radius: 340px;
     width: 60%;
 }
+
+@media only screen and (max-width:425px) 
+{
+    footer .row .col-md-2{
+        margin-top: 8vmin;
+    }
+}
+
+@media only screen and (max-width:320px) 
+{
+    .section-4 .card
+    {
+        width: 18rem;
+    }
+}
+
+.section-4 .carousel-inner  
+{
+    margin-left: -14vmin;
+}
 /* End of Section-4 */
+
+/* Footer  */
+footer  {
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+    
+}
+
+footer .text-muted
+{
+    color: grey !important;
+}
+footer p>span
+{
+    color: #ff512f;
+}
+
+footer input{
+    border: none !important;
+}
+
+footer input::placeholder
+{
+    color: white !important;
+}
+
+footer .input-group .input-group-text{
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .column i
+{
+    color: #dd2476;
+}
+
+footer .column i + i
+{
+    padding: 0 0.5em;
+}
+/* End of Footer */
+
+/* Sticky Class */
+.sticky
+{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
+}
+/* End of Sticky Class */
 
 
 
